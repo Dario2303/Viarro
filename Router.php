@@ -58,6 +58,7 @@ class Router
 
         // entonces incluimos la vista en el layout
         include_once __DIR__ . "/views/$view.php";
+        $titulo = $view;
         $contenido = ob_get_clean(); // asigno la vista en una variable y Limpia el Buffer
         include_once __DIR__ . '/views/layout.php'; //cargamos el layout con la vista dentro
     }
