@@ -2,6 +2,11 @@
 
 require_once __DIR__ . '/../includes/app.php';
 
-$perro = array('dogo aleman', 'buldog frances');
+use Controller\indexController;
+use MVC\Router;
 
-debuguear($perro);
+$router = new Router();
+
+$router->get('/', [indexController::class , 'index'] );
+
+$router->comprobarRutas();

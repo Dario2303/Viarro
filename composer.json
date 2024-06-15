@@ -2,8 +2,9 @@
     "name": "dario/viarro_web",
     "autoload": {
         "psr-4": {
+            "MVC\\": "./",
             "Model\\": "./models",
-            "Controller": "./controllers",
+            "Controller\\": "./controllers",
             "app\\": "./src",
             "View\\": "./views"
         }
