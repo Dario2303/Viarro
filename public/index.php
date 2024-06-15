@@ -2,4 +2,6 @@
 
 require_once __DIR__ . '/../includes/app.php';
 
-echo "desde index";
+$perro = array('dogo aleman', 'buldog frances');
+
+debuguear($perro);
